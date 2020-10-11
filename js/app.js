@@ -27,7 +27,10 @@ secElements.forEach(sec => {
     navBar.insertAdjacentHTML("beforeend",navBarElement);
 });
 
-/* Scroll to anchor ID using scrollTO event, Scroll to section on link click */
+/* Scroll to anchor ID using scrollTO event,
+* Scroll to section on link click
+*Using window.scrollTo
+*/
 
 navBar.addEventListener("click", evt =>{
     evt.preventDefault();
@@ -46,7 +49,10 @@ navBar.addEventListener("click", evt =>{
     });
 });
 
-/* Add class 'active' to section when near top of viewport, Set sections as active */
+/* Add class 'active' to section when near top of viewport, Set sections as active 
+* Using Intersection Observer
+* entries is a callback function
+*/
 
 
 const observer = new IntersectionObserver(entries => {
