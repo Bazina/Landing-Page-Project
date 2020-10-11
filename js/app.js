@@ -80,6 +80,49 @@ const observer = new IntersectionObserver(entries => {
         threshold: 0.6,
     }
     )
-    secElements.forEach(el => {
-        observer.observe(document.getElementById(el.id))
+secElements.forEach(el => {
+    observer.observe(document.getElementById(el.id))
+});
+
+/* Hide navBar while scrolling, src: jquery, was sended by my tutor at a discussion */
+
+$(window).scroll(function() {
+    //don't forget to replace #demo with your nav id
+    $("#navbar__menu").show();
+    clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function() {
+        // after user scroll for the first time start the function if user didn't
+       // after 1 second the it hide the nav with id demo
+        console.log("Haven't scrolled in 800 ms!");
+     //add your nav id      do something if user not scrolled
+    $("#navbar__menu").hide();
+    }, 800));
+    
+});
+
+/* Add toTop Button */
+
+const newBtn = document.createElement("button");
+newBtn.innerHTML = "Top";
+document.body.appendChild(newBtn);
+newBtn.setAttribute("id", "toTop")
+
+/* Scroll to Top */
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = () =>{
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    newBtn.style.display = "block";
+    } else {
+    newBtn.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+newBtn.onclick = () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
     })
+}
