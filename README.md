@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Run](#Run)
-* [ES6](#es6)
-* [Changes](#changes)
+- [Instructions](#instructions)
+- [Run](#Run)
+- [ES6](#es6)
+- [Changes](#changes)
 - [New](#new)
 
 ## Instructions
@@ -22,7 +22,11 @@ To open this project locally, download the project then open `index.html`
 
 ## ES6 & Jquery
 
-I used many ES6 methods & some Jquery, i used `arrow functions`, `const & let` declaration, `IntersectionObserver`.
+I used many ES6 methods & some Jquery, i used
+- `arrow functions`
+- `const & let` declaration
+- `IntersectionObserver`
+
 These thing are working with the latest browsers except IE 11, IE 10.
 
 ## Changes
