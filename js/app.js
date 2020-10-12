@@ -20,7 +20,7 @@ const secElements = document.querySelectorAll("section");
 
 /* End Global Variables */
 
-/* build the nav, Build menu */
+/* build the nav, Build menu, this snippet was built with the help of GitHub */
 
 secElements.forEach(sec => {
     const navBarElement = `<li class="menu__link" data-link="${sec.id}" ><a href = "#${sec.id}">${sec.dataset.nav}</a></li> `;
@@ -49,7 +49,8 @@ navBar.addEventListener("click", evt =>{
     });
 });
 
-/* Add class 'active' to section when near top of viewport, Set sections as active 
+/* Add class 'active' to section when near top of viewport,
+    Set sections as active 
 * Using Intersection Observer
 * entries is a callback function
 */
