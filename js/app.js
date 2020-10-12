@@ -87,16 +87,13 @@ secElements.forEach(el => {
 /* Hide navBar while scrolling, src: jquery, was sended by my tutor at a discussion */
 
 $(window).scroll(function() {
-    //don't forget to replace #demo with your nav id
-    $("#navbar__menu").show();
+    $("#navbar__menu").slideDown(500);
     clearTimeout($.data(this, 'scrollTimer'));
     $.data(this, 'scrollTimer', setTimeout(function() {
         // after user scroll for the first time start the function if user didn't
-       // after 1 second the it hide the nav with id demo
-        console.log("Haven't scrolled in 800 ms!");
-     //add your nav id      do something if user not scrolled
-    $("#navbar__menu").hide();
-    }, 800));
+     //do something if user not scrolled
+    $("#navbar__menu").slideUp(500);
+    }, 1000));
     
 });
 
@@ -126,3 +123,6 @@ newBtn.onclick = () => {
         behavior: "smooth"
     })
 }
+
+// Animated Collapsible Sections
+
