@@ -77,7 +77,7 @@ const observer = new IntersectionObserver(entries => {
     {
         root: null,
         rootMargin: '0px',
-        threshold: 0.6,
+        threshold: 0.7,
     }
     )
 secElements.forEach(el => {
@@ -126,3 +126,17 @@ newBtn.onclick = () => {
 
 // Animated Collapsible Sections
 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("activecoll");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = `${content.scrollHeight}px`;
+    }
+    });
+}
