@@ -84,7 +84,8 @@ secElements.forEach(el => {
     observer.observe(document.getElementById(el.id))
 });
 
-/* Hide navBar while scrolling, src: jquery, was sended by my tutor at a discussion */
+/* Hide navBar while scrolling, src: jquery,
+ was sended by my tutor at a discussion */
 
 $(window).scroll(function() {
     $("#navbar__menu").slideDown(500);
@@ -106,7 +107,10 @@ newBtn.setAttribute("id", "toTop")
 
 /* Scroll to Top */
 
-// When the user scrolls down 20px from the top of the document, show the button
+/* When the user scrolls down 20px from the top of the document,
+    show the button, this snippet built with the help of
+  "https://www.w3schools.com/howto/howto_js_scroll_to_top.asp" */
+
 window.onscroll = () =>{
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     newBtn.style.display = "block";
@@ -116,6 +120,7 @@ window.onscroll = () =>{
 }
 
 // When the user clicks on the button, scroll to the top of the document
+
 newBtn.onclick = () => {
     window.scrollTo({
         top: 0,
@@ -124,7 +129,9 @@ newBtn.onclick = () => {
     })
 }
 
-// Animated Collapsible Sections
+/* Animated Collapsible Sections,
+    this snippet built with the help of
+    "https://www.w3schools.com/howto/howto_js_collapsible.asp" */
 
 const coll = document.getElementsByClassName("collapsible");
 
