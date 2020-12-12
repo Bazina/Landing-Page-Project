@@ -43,5 +43,4 @@ Almost all changes have happened in the `js/app.js` file & some few changes in `
 - Built A dynamical navigation bar based on the number of sections that be hidden while not scrolling.
 - Designed an active state for section and its navigation bar element.
 - When clicking an item from the navigation menu, the link should scroll to the appropriate section.
-- A collapsible sections are made.
 - Designed a scroll to top button on the page that’s only visible when the user scrolls below the fold of the page.
