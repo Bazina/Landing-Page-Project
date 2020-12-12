@@ -46,57 +46,17 @@
         }
     }
 
-    .collapsible {
+    h2 {
+        border-bottom: 1px solid #cc1;
         font-family: 'Oxygen', Sans-Serif;
         font-size: 3em;
         color: #fff;
-        line-height: 1.6em;
-        background: none;
-        border: none;
-        width: 100%;
-        text-align: left;
-        padding: 0px 20px;
-        cursor: pointer;
-        border-bottom: 1px solid #cc1;
-    }
-
-    #section4 button,#section2 button {
-        text-align: right;
-    }
-
-    .activecoll, .collapsible:hover {
-        color: gold;
-    }
-
-    .active_coll {
-        min-height: 0%;
     }
 
     .content {
         line-height: 1.6em;
         color: #eee;
         font-family: "Roboto";
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.3s ease-out;
-    }
-
-    .collapsible:after {
-        content: '\002B';
-        color: white;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-    }
-
-    #section4 .collapsible:after,
-    #section2 .collapsible:after {
-        float: left;
-    }
-
-
-    .activecoll:after {
-        content: "\2212";
     }
 
     /* ---- Layout Rules ---- */
@@ -342,59 +302,20 @@
         }
     }
 
-    .collapsible {
-        font-family: 'Oxygen', Sans-Serif;
-        font-size: 1.5em;
-        color: #fff;
-        line-height: 1.6em;
-        background: none;
-        border: none;
-        width: 100%;
-        text-align: left;
-        padding: 0px 20px;
-        cursor: pointer;
+    h2 {
         border-bottom: 1px solid #cc1;
-    }
-
-    #section4 button,#section2 button {
-        text-align: right;
-    }
-
-    .activecoll, .collapsible:hover {
-        color: gold;
-    }
-
-    .active_coll {
-        min-height: 0%;
+        font-family: 'Oxygen', Sans-Serif;
+        font-size: 2.2em;
+        color: #fff;
     }
 
     .content {
         line-height: 1.6em;
         color: #eee;
         font-family: "Roboto";
-        font-size: 1.2em;
+        font-size: 1em;
         overflow: scroll;
-        max-height: 0;
         height: 50vh;
-        transition: max-height 0.3s ease-out;
-    }
-
-    .collapsible:after {
-        content: '\002B';
-        color: white;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-    }
-
-    #section4 .collapsible:after,
-    #section2 .collapsible:after {
-        float: left;
-    }
-
-
-    .activecoll:after {
-        content: "\2212";
     }
 
     /* ---- Layout Rules ---- */

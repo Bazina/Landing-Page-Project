@@ -2,11 +2,16 @@
 
 ## Table of Contents
 
+- [Description](#description)
 - [Instructions](#instructions)
 - [Run](#Run)
 - [ES6](#es6)
 - [Changes](#changes)
 - [New](#new)
+
+## Description
+
+It's a multi-section landing page. Often times, we don’t know how much content will be added to a page through a CMS or an API. To circumvent this problem, we can dynamically add the content to the page. 
 
 ## Instructions
 
@@ -30,6 +35,7 @@ I used many ES6 methods & some Jquery, i used
 These thing are working with the latest browsers except IE 11, IE 10.
 
 ## Changes
+
 Almost all changes have happened in the `js/app.js` file & some few changes in `index.html` & very few changes in the styling `css/styles.css`
 
 ## New
@@ -37,5 +43,4 @@ Almost all changes have happened in the `js/app.js` file & some few changes in `
 - Built A dynamical navigation bar based on the number of sections that be hidden while not scrolling.
 - Designed an active state for section and its navigation bar element.
 - When clicking an item from the navigation menu, the link should scroll to the appropriate section.
-- A collapsible sections are made.
 - Designed a scroll to top button on the page that’s only visible when the user scrolls below the fold of the page.
